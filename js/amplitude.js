@@ -24,7 +24,7 @@ amplitude_active_song_information['song_title'] = '';
 
 /*
     Add Action Handlers
-    Thanks to: https://www.htmlgoodies.com/beyond/javascript/article.php/3724571/Using-Multiple-JavaScript-Onload-Functions.htm
+    Thanks to: http://www.htmlgoodies.com/beyond/javascript/article.php/3724571/Using-Multiple-JavaScript-Onload-Functions.htm
 */
 function hook_amplitude_functions(func) {
     var oldonload = window.onload;
@@ -489,7 +489,7 @@ function amplitude_set_location(percentage){
 
 /*
     Gets the percentage of the click on the slider to set the song position accordingly.
-    Source for Object event and offset: https://website-engineering.blogspot.com/2011/04/get-x-y-coordinates-relative-to-div-on.html
+    Source for Object event and offset: http://website-engineering.blogspot.com/2011/04/get-x-y-coordinates-relative-to-div-on.html
 */
 function amplitude_set_song_position(e){
     //Gets the offset from the left so it gets the exact location.
@@ -731,7 +731,7 @@ function amplitude_shuffle_playlist(){
 
 /*
     Shuffles songs.
-    Based off of: https://www.codinghorror.com/blog/2007/12/the-danger-of-naivete.html
+    Based off of: http://www.codinghorror.com/blog/2007/12/the-danger-of-naivete.html
 */
 function amplitude_shuffle_songs(){
     var amplitude_nodes = document.getElementById('amplitude-playlist').getElementsByTagName('audio');
@@ -818,7 +818,7 @@ function amplitude_playlist_pause(e){
 
 /*
     Disconnects from a live stream
-    Thanks to help from: https://blog.pearce.org.nz/2010/11/how-to-stop-video-or-audio-element.html
+    Thanks to help from: http://blog.pearce.org.nz/2010/11/how-to-stop-video-or-audio-element.html
 */
 function amplitude_disconnect_stream(){
     amplitude_active_song.pause();

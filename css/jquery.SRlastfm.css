@@ -37,7 +37,10 @@ color: white !important;
 	text-decoration: underline;
 }
 
-.lastFM a img { border: none; }
+.lastFM a img { 
+	border: none;
+}
+
 .lastFM img
 {
 	float: right;

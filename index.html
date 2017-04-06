@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href=css/jquery.SRlastfm.css rel='stylesheet' type='text/css'>
     <link href=css/main.css rel='stylesheet' type='text/css'>
     <link href=css/special.css rel='stylesheet' type='text/css'>
@@ -24,7 +25,7 @@
 </head>
 
 <body>
-    <div id="leftContent">
+    <div class="column">
         <div id="container">
             <div id="turntable">
                 <img id="outer" src="https://salient.org.nz/fm/images/SalientFM-Outer.png">
@@ -61,7 +62,7 @@
             </div>
             <div id="single-song-container">
                 <audio id="single-song" preload="none">
-                    <source src="https://s2.stationplaylist.com:8190/" type="audio/mp3" id="single-song"/>
+                    <source src="http://s2.stationplaylist.com:8190/" type="audio/mp3" id="single-song"/>
                     Your browser does not support the audio tag.
                 </audio>
                 <p>If you hear a swear word, call the cops</p>
@@ -69,7 +70,7 @@
             <script type="text/javascript">
                 amplitude_config = {
                     'amplitude_live': true,
-                    'amplitude_live_source': 'https://s2.stationplaylist.com:8190/;',
+                    'amplitude_live_source': 'http://s2.stationplaylist.com:8190/;',
                     'track-info-container': 'Livestream',
                     'autoplay': true,
                 }
@@ -81,7 +82,7 @@
     <script type="text/javascript"> 
         rssfeed_url = new Array(); 
         rssfeed_url[0]="https://salient.org.nz/feed";  
-        rssfeed_frame_width="400"; 
+        rssfeed_frame_width="auto"; 
         rssfeed_frame_height="650"; 
         rssfeed_scroll="on"; 
         rssfeed_scroll_step="6"; 
@@ -116,7 +117,7 @@
         rssfeed_no_items="0"; 
         rssfeed_cache = "23f7497c590f9c8d0b3f77508b8ddd9b"; 
     </script> 
-    <div id="rss">
+    <div class="column" id="rss">
         <script type="text/javascript" src="js/rss-feed.js"></script>  
     </div>
     <!-- end sw-rss-feed code -->

@@ -14,12 +14,30 @@
     font-family: 'wedge', 'wedge_ie'
 }
 
+#rss iframe{
+    min-width: auto;
+}
+
+#rss{
+    width: auto;
+    max-width: 500px;
+}
+
+.column{
+    padding: 10px;
+}
+
+
 #container{
     position: relative;
     font-family: "wedge";
     color: aliceblue;
     text-align: center;
     padding-top: 8%;
+}
+
+html{
+    height: 100%;
 }
 
 body{
@@ -30,10 +48,13 @@ body{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
-	margin: 0;
-    padding: 10px;
+    justify-content: space-around;
+    width: auto;
+    min-height: 100%;
+    max-width: 1000px;
+	margin: auto;
 	font-family:'wedge';
+    font-size: 1.1em;
     color: #ffffff;
 }
 

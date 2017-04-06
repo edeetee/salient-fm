@@ -73,7 +73,6 @@
 
 /*spinning*/
 #outer{
-    
     -webkit-animation-name: spin;
     -webkit-animation-duration: 5000ms;
     -webkit-animation-iteration-count: infinite;
