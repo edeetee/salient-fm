@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'wedge';
+    src: url(../fonts/ttf/P22Wedge.ttf);
+}
+
+@font-face {
+    font-family: 'wedge_ie';
+    src: url(../fonts/ttf/P22Wedge.eot);
+}
+
+.wedge {
+    font-family: 'wedge', 'wedge_ie'
+}
+
+#container{
+    position: relative;
+    font-family: "wedge";
+    color: aliceblue;
+    text-align: center;
+    padding-top: 8%;
+}
+
+body{
+    background-color: hsl(0, 0%, 20%);
+    background-repeat: repeat;
+    background-position: top left;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+	margin: 0;
+    padding: 10px;
+	font-family:'wedge';
+    color: #ffffff;
+}
+
+#container{
+    margin-left: inherit;
+    margin-right: auto;
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    margin-top: auto;
+}
+
+embed{
+    opacity: 0;
+}
+
+p{
+    font-family: 'wedge';
+    font-weight: normal;
+    font-size: 1em;
+    color: #ffffff;
+    max-width: 400px;
+    text-align: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#turntable{
+    width:150px;
+    height: 150px;
+}
+#outer, #inner{
+    width: 50%;
+    margin: auto;
+    display: block;
+    position: absolute;
+}
+
+
+.lastFMHeader{
+display:none !important;
+}
+.lastFM {
+margin: 2em 0em !important;
+}
+.itemRow {
+padding: 0em !important;
+}
+.even {
+background-color: #333333 !important;
+color: white !important;
+}
+.even a {
+color: white !important;
+}
+.even img {
+background-color: #333333 !important;
+}
+.odd {
+background-color: #333333 !important;
+color: white !important;
+}
+
+.lastFM
+{
+	font-family: 'wedge';
+    font-size: 0.9em;
+    color: #ffffff;
+	margin: 1em 2em;
+	width: 280px;
+	color: #ddbebe;
+}
+.lastFM a:hover
+{
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.lastFM a img { border: none; }
+.lastFM img
+{
+	float: right;
+	margin: 0 0 0 0;
+}
+
+.lastFMBody { border: none; }
+.lastFMBody ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.itemRow
+{
+	clear: bottom;
+	margin: 0;
+	padding: 0.4em; 
+	height: 64px;
+}
+
+.odd { background-color: #fce8fa; }
+.even { background-color: #e0cee5; }

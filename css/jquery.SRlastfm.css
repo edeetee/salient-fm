@@ -1,133 +1,3 @@
-@charset "UTF-8";
-
-@font-face {
-font-family: 'wedge';
-src: url(fm/fonts/ttf/P22Wedge.ttf);
-}
-
-@font-face {
-font-family: 'wedge_ie';
-src: url(fonts/ttf/P22Wedge.eot);
-}
-
-.wedge {
-    font-family: 'wedge', 'wedge_ie'
-}
-
-body {
-	margin: 1em 3em;
-	font-family:'wedge';
-    color: #ffffff;
-    padding-left: 15%;
-}
-
-.lastFM
-{
-	font-family: 'wedge';
-    color: #ffffff;
-	font-size: 80%;
-	margin: 1em 2em;
-	width: 280px;
-	color: #ddbebe;
-}
-.lastFM a
-{
-	color: #ffffff;
-	text-decoration: none;
-}
-.lastFM a:hover
-{
-	color: #ffffff;
-	text-decoration: underline;
-}
-.lastFM a img { border: none; }
-.lastFM img
-{
-	float: right;
-	margin: 0 0 0 0;
-}
-
-.lastFMHeader
-{
-	font-size: 1.8em;
-	font-weight: normal;
-	padding: 0.2em 0;
-}
-
-.lovedtracks, .recenttracks, .topablums, .topartists, .toptracks {}
-
-.lastFMBody { border: none; }
-.lastFMBody ul
-{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-.itemRow
-{
-	clear: bottom;
-	margin: 0;
-	padding: 0.4em; 
-	height: 64px;
-}
-.itemName a
-{
-	font-weight: normal;
-}
-
-.odd { background-color: #fce8fa; }
-.even { background-color: #e0cee5; }
-
-/* Player Styles */
-#container{
-    position: relative;
-    font-family: "wedge";
-    color: aliceblue;
-    text-align: center;
-    padding-top: 8%;
-}
-
-.foot{
-    position: fixed;
-    bottom: 15;
-    padding-bottom: 0px;
-    padding-left: 4%
-}
-
-#player{
-    width: 300px;
-    margin: auto;
-   
-}
-#player-top{
-    border-radius: 5px;
-    padding: 10px;
-    height: 40px;
-    background-color: #333333;
- 
-}
-#slash{
-    color: #3b3b3b;
-    font-size: 12px;
-    font-weight: bold;
-    text-shadow: 1px 1px #ffffff;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    margin-top: 20px;
-}
-#track-info-container{
-    float: left;
-    font-size: 10px;
-    width: 200px;
-    overflow: hidden;
-    margin-left: 10px;
-}
-#time-info-container{
-    float: left;
-    margin-top: 15px;
-    font-size: 10px;
-    line-height: 19px;
-}
-
 /* Amplitude Element Styles */
 #amplitude-play-pause{
     width: 15px;
@@ -199,9 +69,87 @@ body {
     border-radius: 10px;
     color: white;
 }
-#rss{
-    position: relative;
-    float: right;
-    margin-top: -580px;
-    margin-right: 25%;
+
+
+/*spinning*/
+#outer{
+    
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 5000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 5000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 5000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+#inner{
+    -webkit-animation-name: reversespin;
+    -webkit-animation-duration: 10000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 10000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 10000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    
+    animation-name: reversespin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-ms-keyframes reversespin {
+    from { -ms-transform: rotate(360deg); }
+    to { -ms-transform: rotate(0deg); }
+}
+@-moz-keyframes reversespinspin {
+    from { -moz-transform: rotate(360deg); }
+    to { -moz-transform: rotate(0deg); }
+}
+@-webkit-keyframes reversespin {
+    from { -webkit-transform: rotate(360deg); }
+    to { -webkit-transform: rotate(0deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(360deg);
+    }
+    to {
+        transform:rotate(0deg);
+    }
 }
