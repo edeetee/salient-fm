@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+body {
+	margin: 2em 4em;
+	font-family:'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+#info {
+    text-align: center;
+}
+
+/* Player Styles */
+#container{
+    position: relative;
+    font-family: sans-serif;
+    color: aliceblue;
+    text-align: center;
+}
+
+.foot{
+    position: fixed;
+    bottom: 15;
+    padding-bottom: 0px;
+    padding-top: 10%
+}
+
+#player{
+    width: 600px;
+    margin: auto;
+    position: relative;
+   
+   
+}
+#player-top{
+    border-radius: 5px;
+    padding: 10px;
+    height: 80px;
+    background-color: #333333;
+ 
+}
+#slash{
+    color: #3b3b3b;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 1px 1px #ffffff;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    margin-top: 20px;
+}
+#track-info-container{
+    float: left;
+    font-size: 10px;
+    width: 200px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+#time-info-container{
+    float: left;
+    margin-top: 15px;
+    font-size: 10px;
+    line-height: 19px;
+}
+
+/* Amplitude Element Styles */
+#amplitude-play-pause{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    float: left;
+}
+.amplitude-paused{
+    background-image: url('http://salient.org.nz/wp-content/themes/salientfm2016/images/mobile-play-small.png');
+    background-repeat: no-repeat;
+}
+.amplitude-playing{
+    background-image: url('http://salient.org.nz/wp-content/themes/salientfm2016/images/mobile-pause-small.png');
+    background-repeat: no-repeat;
+}
+#amplitude-now-playing-artist{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 14px;
+}
+#amplitude-now-playing-title{
+    color: #3b3b3b;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 1px 1px #ffffff;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    margin-top: 20px;
+}
+#amplitude-current-time{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+#amplitude-audio-duration{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+#amplitude-song-slider{
+    display: inline-block;
+    height: 0px;
+    border-radius: 5px;
+    width: 220px;
+    background-color: rgba(237,237,237,.8);
+    margin-left: 10px;
+    margin-top: 0px;
+}
+#amplitude-track-progress{
+    background-color: #fad52c;
+    height: 10px;
+    border-radius: 5px;
+    width: 0px;
+}
+#amplitude-volume-meter{
+    display: inline-block;
+    height: 30px;
+    border-radius: 5px;
+    width: 500px;
+    background-color: rgba(177, 168, 168, 0.8);
+    margin-left: 30px;
+    margin-right: 0px;
+    margin-top: 0px;
+    
+}
+#amplitude-volume-status{
+    background-color: rgba(255, 255, 255, 0.82);
+    height: 30px;
+    border-radius: 5px;
+    width: 500px;
+}
+#amplitude-volume-status-tracker{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    color: #333333;
+}
+#rss{
+    padding-top: 80px;
+}
+
+.lastFM
+{
+	font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+	font-size: 80%;
+	margin: 1em 2em;
+	width: 280px;
+	color: #ddbebe;
+}
+.lastFM a
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+.lastFM a:hover
+{
+	color: #ffffff;
+	text-decoration: underline;
+}
+.lastFM a img { border: none; }
+.lastFM img
+{
+	float: right;
+	margin: 0 0 0 0;
+}
+
+.lastFMHeader
+{
+	font-size: 1.8em;
+	font-weight: normal;
+	padding: 0.2em 0;
+}
+
+.lovedtracks, .recenttracks, .topablums, .topartists, .toptracks {}
+
+.lastFMBody { border: none; }
+.lastFMBody ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.itemRow
+{
+	clear: bottom;
+	margin: 0;
+	padding: 0.4em; 
+	height: 64px;
+}
+.itemName a
+{
+	font-weight: normal;
+}
+
+.odd { background-color: #fce8fa; }
+.even { background-color: #e0cee5; }
