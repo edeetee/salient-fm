@@ -6,11 +6,11 @@
     float: left;
 }
 .amplitude-paused{
-    background-image: url('http://salient.org.nz/wp-content/themes/salientfm2016/images/white-play-small.png');
+    background-image: url('https://salient.org.nz/wp-content/themes/salientfm2016/images/white-play-small.png');
     background-repeat: no-repeat;
 }
 .amplitude-playing{
-    background-image: url('http://salient.org.nz/wp-content/themes/salientfm2016/images/white-pause-small.png');
+    background-image: url('https://salient.org.nz/wp-content/themes/salientfm2016/images/white-pause-small.png');
     background-repeat: no-repeat;
 }
 #amplitude-now-playing-artist{
