@@ -1,0 +1,155 @@
+/* Amplitude Element Styles */
+#amplitude-play-pause{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    float: left;
+}
+.amplitude-paused{
+    background-image: url('https://salient.org.nz/wp-content/themes/salientfm2016/images/white-play-small.png');
+    background-repeat: no-repeat;
+}
+.amplitude-playing{
+    background-image: url('https://salient.org.nz/wp-content/themes/salientfm2016/images/white-pause-small.png');
+    background-repeat: no-repeat;
+}
+#amplitude-now-playing-artist{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 14px;
+}
+#amplitude-now-playing-title{
+    color: #3b3b3b;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 1px 1px #ffffff;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    margin-top: 20px;
+}
+#amplitude-current-time{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+#amplitude-audio-duration{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+#amplitude-song-slider{
+    display: inline-block;
+    height: 0px;
+    border-radius: 5px;
+    width: 220px;
+    background-color: rgba(237,237,237,.8);
+    margin-left: 10px;
+    margin-top: 0px;
+}
+#amplitude-track-progress{
+    background-color: #fad52c;
+    height: 10px;
+    border-radius: 5px;
+    width: 0px;
+}
+#amplitude-volume-meter{
+    display: inline-block;
+    height: 10px;
+    border-radius: 5px;
+    width: 200px;
+    background-color: rgba(177, 168, 168, 0.8);
+    margin-left: 30px;
+    margin-right: 0px;
+    margin-top: 0px;
+    
+}
+#amplitude-volume-status{
+    background-color: rgba(255, 255, 255, 0.82);
+    height: 10px;
+    border-radius: 5px;
+    width: 100px;
+}
+#amplitude-volume-status-tracker{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+
+/*spinning*/
+#outer{
+    
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 5000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 5000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 5000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+#inner{
+    -webkit-animation-name: reversespin;
+    -webkit-animation-duration: 10000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 10000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 10000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    
+    animation-name: reversespin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-ms-keyframes reversespin {
+    from { -ms-transform: rotate(360deg); }
+    to { -ms-transform: rotate(0deg); }
+}
+@-moz-keyframes reversespinspin {
+    from { -moz-transform: rotate(360deg); }
+    to { -moz-transform: rotate(0deg); }
+}
+@-webkit-keyframes reversespin {
+    from { -webkit-transform: rotate(360deg); }
+    to { -webkit-transform: rotate(0deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(360deg);
+    }
+    to {
+        transform:rotate(0deg);
+    }
+}
